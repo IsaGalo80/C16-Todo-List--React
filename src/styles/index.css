@@ -23,12 +23,11 @@ h1{
     height: 50px;
     align-content: center;
     border-color: transparent;
-   
 }
 #listas{
     background: whitesmoke;
     font-family:'Courier New', Courier, monospace;
-    font-size: 30px;
+    font-size: 20px;
     width: 500px;
     align-content: center;
     margin-right:85px;
@@ -37,24 +36,4 @@ h1{
 #bCerrar{
     list-style-type: circle;
 }
-/* #tex1{
-    margin-right: 5px;
-    margin-left: 100px;
-} */
-
-/* #guardar{
-    display: flex;
-    align-items: stretch;
-} */
-/* #tarea {
-    width:860px;
-    height:40px;
-} */
-
-/* .renglones{
-    display: flex;
-    background-color: hsl(0, 2%, 65%);
-    width:600px;
-    height:200px;  
-} */
 
