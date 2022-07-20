@@ -32,7 +32,7 @@ const Home = () => {
   }, []);
 
   useEffect(() => {
-    setTimeout(() =>
+    
       fetch("https://assets.breatheco.de/apis/fake/todos/user/IsaG", {
         method: "PUT",
         body: JSON.stringify(
@@ -56,8 +56,7 @@ const Home = () => {
           //manejo de errores
           console.log(error);
         })
-    );
-  }, 10000);
+  }, [listTask]);
 
   const deletTask = (posicion) => {
     console.log("ejecutado");
@@ -77,12 +76,12 @@ const Home = () => {
               }}
               value={inputValue}
               onKeyDown={(e) => {
-                if(e.key==="Enter"){
+                if (e.key === "Enter") {
                   setListTask([...listTask, inputValue]);
-                  setInputValue("")}
-                }}
-            >
-            </input>
+                  setInputValue("");
+                }
+              }}
+            ></input>
             <div>
               <ul>
                 {listTask.map((value, index) => {
@@ -93,7 +92,8 @@ const Home = () => {
                         onClick={() => {
                           deletTask(index);
                         }}
-                      ><i id="bCerrar" className="fa-solid fa fa-trash"></i>
+                      >
+                        <i id="bCerrar" className="fa-solid fa fa-trash"></i>
                       </span>
                     </div>
                   );
